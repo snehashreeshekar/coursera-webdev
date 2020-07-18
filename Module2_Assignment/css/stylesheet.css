@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+h1
+{
+	text-align: center;
+  font-size: 28px;
+
+}
+
+p{
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  border: 1px solid black;
+  float: left;
+  background-color: gray;
+  font-family: Arial, Verdana, Helvetica;
+  font-size: 20px;
+}
+
+.sub-heading {
+  border: 1px solid black;
+  padding: 0px 5px;
+  float: right;
+  font-size: 
+}
+
+.first .sub-heading{
+  background-color: pink;
+}
+
+.second .sub-heading{
+  background-color: green;
+}
+
+.third .sub-heading{
+  background-color: yellow;
+}
+
+.description-text {
+  text-align: justify;
+  padding: 5px 10px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .container {
+    float:left;
+    width: 32.5%;
+    margin-right: 8px;
+    height: 130px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .first {
+    margin-right: 8px;
+  	float: left;
+  	width: 49%;
+  }
+  .second {
+  	float: left;
+  	width: 49%;
+  }
+  .third {
+  	float: left;
+  	width: 99%;
+    margin-top: 8px;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  .first {
+  	float: left;
+  	width: 100%;
+  }
+  .second {
+  	float: left;
+  	width: 100%;
+    margin-top: 8px;
+  }
+  .third {
+  	float: left;
+  	width: 100%;
+    margin-top: 8px;
+  }
+}
